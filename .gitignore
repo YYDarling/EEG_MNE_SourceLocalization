@@ -1,0 +1,2 @@
+subjects/sub125/*.fif
+subjects/sub125/**/warp.to*.nii.gz
