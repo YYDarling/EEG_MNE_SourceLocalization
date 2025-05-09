@@ -1,0 +1,13 @@
+------------------------------
+SUBJECT sub125
+START_TIME Fri Mar 28 15:02:50 CDT 2025
+END_TIME Fri Mar 28 17:23:53 CDT 2025
+RUNTIME_HOURS 2.351
+USER root
+HOST H2WHK1CLQ6P0
+PROCESSOR arm64
+OS Darwin
+UNAME Darwin H2WHK1CLQ6P0 24.3.0 Darwin Kernel Version 24.3.0: Thu Jan  2 20:24:06 PST 2025; root:xnu-11215.81.4~3/RELEASE_ARM64_T8103 arm64
+VERSION dev (freesurfer-macOS-darwin_arm64-8.0.0-20250205-0f2bd3a)
+CMDPATH /Applications/freesurfer/8.0.0/bin/recon-all
+CMDARGS -s sub125 -i sub_125_T1_shrink.nii -all

@@ -1,0 +1,1 @@
+mri_convert /Applications/freesurfer/8.0.0/subjects/sub125/mri/rawavg.mgz /Applications/freesurfer/8.0.0/subjects/sub125/mri/orig.mgz --conform

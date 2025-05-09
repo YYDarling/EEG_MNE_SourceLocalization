@@ -1,0 +1,60 @@
+# Title Segmentation Statistics 
+# 
+# generating_program mri_segstats
+# cvs_version dev
+# cmdline mri_segstats --i /Applications/freesurfer/8.0.0/subjects/sub125/mri/nu.mgz --seg /Applications/freesurfer/8.0.0/subjects/sub125/mri/vsinus.mgz --sum /Applications/freesurfer/8.0.0/subjects/sub125/stats/vsinus.stats --subject sub125 --etiv 
+# sysname  Darwin
+# hostname H2WHK1CLQ6P0
+# machine  arm64
+# user     root
+# anatomy_type volume
+# 
+# SUBJECTS_DIR /Applications/freesurfer/8.0.0/subjects
+# subjectname sub125
+# Measure EstimatedTotalIntraCranialVol, eTIV, Estimated Total Intracranial Volume, 1878968.423135, mm^3
+# SegVolFile /Applications/freesurfer/8.0.0/subjects/sub125/mri/vsinus.mgz 
+# SegVolFileTimeStamp  2025/03/28 15:46:56 
+# InVolFile  /Applications/freesurfer/8.0.0/subjects/sub125/mri/nu.mgz 
+# InVolFileTimeStamp  2025/03/28 15:45:06 
+# InVolFrame 0 
+# ExcludeSegId 0 
+# Only reporting non-empty segmentations
+# VoxelVolume_mm3 1 
+# TableCol  1 ColHeader Index 
+# TableCol  1 FieldName Index 
+# TableCol  1 Units     NA 
+# TableCol  2 ColHeader SegId 
+# TableCol  2 FieldName Segmentation Id
+# TableCol  2 Units     NA
+# TableCol  3 ColHeader NVoxels 
+# TableCol  3 FieldName Number of Voxels
+# TableCol  3 Units     unitless
+# TableCol  4 ColHeader Volume_mm3
+# TableCol  4 FieldName Volume
+# TableCol  4 Units     mm^3
+# TableCol  5 ColHeader StructName
+# TableCol  5 FieldName Structure Name
+# TableCol  5 Units     NA
+# TableCol  6 ColHeader Mean 
+# TableCol  6 FieldName Intensity Mean
+# TableCol  6 Units     unknown
+# TableCol  7 ColHeader StdDev
+# TableCol  7 FieldName Intensity StdDev
+# TableCol  7 Units     unknown
+# TableCol  8 ColHeader Min
+# TableCol  8 FieldName Intensity Min
+# TableCol  8 Units     unknown
+# TableCol  9 ColHeader Max
+# TableCol  9 FieldName Intensity Max
+# TableCol  9 Units     unknown
+# TableCol 10 ColHeader Range
+# TableCol 10 FieldName Intensity Range
+# TableCol 10 Units     unknown
+# NRows 5 
+# NTableCols 10 
+# ColHeaders  Index SegId NVoxels Volume_mm3 StructName Mean StdDev Min Max Range  
+  1 6111      4345     4345.0  Left-Transverse-Sinus             71.3574     9.3843    40.0000   110.0000    70.0000 
+  2 6112      3128     3128.0  Right-Transverse-Sinus            68.9293     9.0314    34.0000   106.0000    72.0000 
+  3 6115       627      627.0  Straight-Sinus                    75.8150     9.1528    53.0000   108.0000    55.0000 
+  4 6116      3337     3337.0  Superior-Sinus-P                  76.7072     7.1870    48.0000   110.0000    62.0000 
+  5 6117      5452     5452.0  Superior-Sinus-D                  58.8977    10.5961    30.0000    92.0000    62.0000 

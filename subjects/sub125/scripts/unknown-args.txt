@@ -1,0 +1,5 @@
+-s
+sub125
+-i
+sub_125_T1_shrink.nii
+-all

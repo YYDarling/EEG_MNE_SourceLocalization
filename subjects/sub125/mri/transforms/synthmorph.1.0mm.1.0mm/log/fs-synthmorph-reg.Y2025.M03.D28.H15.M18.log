@@ -1,0 +1,225 @@
+Log file for fs-synthmorph-reg
+Fri Mar 28 15:18:44 CDT 2025
+
+setenv SUBJECTS_DIR /Applications/freesurfer/8.0.0/subjects
+cd /Applications/freesurfer/8.0.0/subjects/sub125
+/Applications/freesurfer/8.0.0/bin/fs-synthmorph-reg --s sub125 --threads 1 --i /Applications/freesurfer/8.0.0/subjects/sub125/mri/orig.mgz --test
+-rwxr-xr-x  1 root  wheel  30890 Feb  5 03:56 /Applications/freesurfer/8.0.0/bin/fs-synthmorph-reg
+
+freesurfer-macOS-darwin_arm64-8.0.0-20250205-0f2bd3a
+$Id$
+Darwin H2WHK1CLQ6P0 24.3.0 Darwin Kernel Version 24.3.0: Thu Jan  2 20:24:06 PST 2025; root:xnu-11215.81.4~3/RELEASE_ARM64_T8103 arm64
+pid 4849
+mri_mask -bb 3 /Applications/freesurfer/8.0.0/subjects/sub125/mri/orig.mgz /Applications/freesurfer/8.0.0/subjects/sub125/mri/orig.mgz /Applications/freesurfer/8.0.0/subjects/sub125/mri/transforms/synthmorph.1.0mm.1.0mm/tmp/invol.crop.nii.gz
+cropping npad = 3
+DoAbs = 0
+Computing bounding box, npad = 3, 3, 3, 3, 3, 3
+39 38 14  179 181 227
+maskval=0, outval=0
+Writing masked volume to /Applications/freesurfer/8.0.0/subjects/sub125/mri/transforms/synthmorph.1.0mm.1.0mm/tmp/invol.crop.nii.gz...done.
+lta_convert --inlta identity.nofile --src /Applications/freesurfer/8.0.0/subjects/sub125/mri/transforms/synthmorph.1.0mm.1.0mm/tmp/invol.crop.nii.gz --trg /Applications/freesurfer/8.0.0/subjects/sub125/mri/orig.mgz --outlta /Applications/freesurfer/8.0.0/subjects/sub125/mri/transforms/synthmorph.1.0mm.1.0mm/tmp/reg.crop-to-invol.lta
+dev
+
+--inlta: identity.nofile input LTA transform.
+--src: /Applications/freesurfer/8.0.0/subjects/sub125/mri/transforms/synthmorph.1.0mm.1.0mm/tmp/invol.crop.nii.gz src image (geometry).
+--trg: /Applications/freesurfer/8.0.0/subjects/sub125/mri/orig.mgz trg image (geometry).
+--outlta: /Applications/freesurfer/8.0.0/subjects/sub125/mri/transforms/synthmorph.1.0mm.1.0mm/tmp/reg.crop-to-invol.lta output LTA.
+ LTA read, type : 1
+ 1.00000   0.00000   0.00000   0.00000;
+ 0.00000   1.00000   0.00000   0.00000;
+ 0.00000   0.00000   1.00000   0.00000;
+ 0.00000   0.00000   0.00000   1.00000;
+Writing  LTA to file /Applications/freesurfer/8.0.0/subjects/sub125/mri/transforms/synthmorph.1.0mm.1.0mm/tmp/reg.crop-to-invol.lta...
+lta_convert successful.
+Fri Mar 28 15:18:45 CDT 2025
+\n\n
+mri_synthmorph -m affine -t /Applications/freesurfer/8.0.0/subjects/sub125/mri/transforms/synthmorph.1.0mm.1.0mm/aff.lta /Applications/freesurfer/8.0.0/subjects/sub125/mri/transforms/synthmorph.1.0mm.1.0mm/tmp/invol.crop.nii.gz /Applications/freesurfer/8.0.0/average/mni_icbm152_nlin_asym_09c/reg-targets/mni152.1.0mm.cropped.nii.gz -j 1
+Thank you for choosing SynthMorph. Please cite us!
+
+SynthMorph: learning contrast-invariant registration without acquired images
+Hoffmann M, Billot B, Greve DN, Iglesias JE, Fischl B, Dalca AV
+IEEE Transactions on Medical Imaging, 41 (3), 543-558, 2022
+https://doi.org/10.1109/TMI.2021.3116879
+
+Anatomy-specific acquisition-agnostic affine registration learned from
+fictitious images
+Hoffmann M, Hoopes A, Fischl B*, Dalca AV* (*equal contribution)
+SPIE Medical Imaging: Image Processing, 12464, 1246402, 2023
+https://doi.org/10.1117/12.2653251
+https://synthmorph.io/#papers (PDF)
+
+Anatomy-aware and acquisition-agnostic joint registration with SynthMorph
+Hoffmann M, Hoopes A, Greve DN, Fischl B*, Dalca AV* (*equal contribution)
+Imaging Neuroscience, 2, 1-33, 2024
+https://doi.org/10.1162/imag_a_00197
+
+Website: https://synthmorph.io
+Fri Mar 28 15:19:32 CDT 2025
+\n\n
+mri_concatenate_lta -invert1 -invertout /Applications/freesurfer/8.0.0/subjects/sub125/mri/transforms/synthmorph.1.0mm.1.0mm/aff.lta /Applications/freesurfer/8.0.0/subjects/sub125/mri/transforms/synthmorph.1.0mm.1.0mm/tmp/reg.crop-to-invol.lta /Applications/freesurfer/8.0.0/subjects/sub125/mri/transforms/synthmorph.1.0mm.1.0mm/tmp/reg.invol_to_croptarg.lta
+invert the first LTA before applying it 
+invert the output LTA
+Read individual LTAs
+Combining the two LTAs to get a RAS-to-RAS from src of LTA1 to dst of LTA2...
+Inverting output LTA
+Writing combined LTA to file /Applications/freesurfer/8.0.0/subjects/sub125/mri/transforms/synthmorph.1.0mm.1.0mm/tmp/reg.invol_to_croptarg.lta...
+mri_concatenate_lta successful.
+\n\n
+mri_concatenate_lta -invert2 /Applications/freesurfer/8.0.0/average/mni_icbm152_nlin_asym_09c/reg-targets/reg.1.0mm.to.1.0mm.cropped.lta /Applications/freesurfer/8.0.0/subjects/sub125/mri/transforms/synthmorph.1.0mm.1.0mm/tmp/reg.invol_to_croptarg.lta /Applications/freesurfer/8.0.0/subjects/sub125/mri/transforms/synthmorph.1.0mm.1.0mm/reg.targ_to_invol.lta
+invert the second LTA before applying it 
+Read individual LTAs
+Combining the two LTAs to get a RAS-to-RAS from src of LTA1 to dst of LTA2...
+Writing combined LTA to file /Applications/freesurfer/8.0.0/subjects/sub125/mri/transforms/synthmorph.1.0mm.1.0mm/reg.targ_to_invol.lta...
+mri_concatenate_lta successful.
+\n\n
+lta_convert --invert --inlta /Applications/freesurfer/8.0.0/subjects/sub125/mri/transforms/synthmorph.1.0mm.1.0mm/reg.targ_to_invol.lta --outlta /Applications/freesurfer/8.0.0/subjects/sub125/mri/transforms/synthmorph.1.0mm.1.0mm/reg.invol_to_targ.lta
+dev
+
+--invert: will invert transform.
+--inlta: /Applications/freesurfer/8.0.0/subjects/sub125/mri/transforms/synthmorph.1.0mm.1.0mm/reg.targ_to_invol.lta input LTA transform.
+--outlta: /Applications/freesurfer/8.0.0/subjects/sub125/mri/transforms/synthmorph.1.0mm.1.0mm/reg.invol_to_targ.lta output LTA.
+ LTA read, type : 1
+ 0.98620  -0.00759   0.01349  -13.58416;
+ 0.02626   0.90159  -0.19870  -45.61694;
+-0.02170   0.18421   0.90533  -83.65108;
+ 0.00000   0.00000   0.00000   1.00000;
+Writing  LTA to file /Applications/freesurfer/8.0.0/subjects/sub125/mri/transforms/synthmorph.1.0mm.1.0mm/reg.invol_to_targ.lta...
+lta_convert successful.
+\n\n
+lta_convert --inlta /Applications/freesurfer/8.0.0/subjects/sub125/mri/transforms/synthmorph.1.0mm.1.0mm/reg.invol_to_targ.lta --outmni /Applications/freesurfer/8.0.0/subjects/sub125/mri/transforms/synthmorph.1.0mm.1.0mm/reg.invol_to_targ.xfm
+dev
+
+--inlta: /Applications/freesurfer/8.0.0/subjects/sub125/mri/transforms/synthmorph.1.0mm.1.0mm/reg.invol_to_targ.lta input LTA transform.
+--outmni: /Applications/freesurfer/8.0.0/subjects/sub125/mri/transforms/synthmorph.1.0mm.1.0mm/reg.invol_to_targ.xfm output MNI/XFM matrix.
+ LTA read, type : 1
+ 1.01341   0.01111  -0.01266   13.21414;
+-0.02312   1.06129   0.23328   67.61269;
+ 0.02899  -0.21567   1.05680   78.95818;
+ 0.00000   0.00000   0.00000   1.00000;
+lta_convert successful.
+\n\n
+
+To check affine registration
+tkregisterfv --mov /Applications/freesurfer/8.0.0/subjects/sub125/mri/orig.mgz --targ /Applications/freesurfer/8.0.0/average/mni_icbm152_nlin_asym_09c/reg-targets/mni152.1.0mm.nii.gz --reg /Applications/freesurfer/8.0.0/subjects/sub125/mri/transforms/synthmorph.1.0mm.1.0mm/reg.invol_to_targ.lta
+
+\n\n
+mri_synthmorph -m deform -t /Applications/freesurfer/8.0.0/subjects/sub125/mri/transforms/synthmorph.1.0mm.1.0mm/tmp/deform.mgz -i /Applications/freesurfer/8.0.0/subjects/sub125/mri/transforms/synthmorph.1.0mm.1.0mm/aff.lta /Applications/freesurfer/8.0.0/subjects/sub125/mri/transforms/synthmorph.1.0mm.1.0mm/tmp/invol.crop.nii.gz /Applications/freesurfer/8.0.0/average/mni_icbm152_nlin_asym_09c/reg-targets/mni152.1.0mm.cropped.nii.gz -j 1 -o /Applications/freesurfer/8.0.0/subjects/sub125/mri/transforms/synthmorph.1.0mm.1.0mm/tmp/synthmorph.out.mgz
+Thank you for choosing SynthMorph. Please cite us!
+
+SynthMorph: learning contrast-invariant registration without acquired images
+Hoffmann M, Billot B, Greve DN, Iglesias JE, Fischl B, Dalca AV
+IEEE Transactions on Medical Imaging, 41 (3), 543-558, 2022
+https://doi.org/10.1109/TMI.2021.3116879
+
+Anatomy-specific acquisition-agnostic affine registration learned from
+fictitious images
+Hoffmann M, Hoopes A, Fischl B*, Dalca AV* (*equal contribution)
+SPIE Medical Imaging: Image Processing, 12464, 1246402, 2023
+https://doi.org/10.1117/12.2653251
+https://synthmorph.io/#papers (PDF)
+
+Anatomy-aware and acquisition-agnostic joint registration with SynthMorph
+Hoffmann M, Hoopes A, Greve DN, Fischl B*, Dalca AV* (*equal contribution)
+Imaging Neuroscience, 2, 1-33, 2024
+https://doi.org/10.1162/imag_a_00197
+
+Website: https://synthmorph.io
+\n\nmri_warp_convert --inras /Applications/freesurfer/8.0.0/subjects/sub125/mri/transforms/synthmorph.1.0mm.1.0mm/tmp/deform.mgz --insrcgeom /Applications/freesurfer/8.0.0/subjects/sub125/mri/transforms/synthmorph.1.0mm.1.0mm/tmp/invol.crop.nii.gz --outm3z /Applications/freesurfer/8.0.0/subjects/sub125/mri/transforms/synthmorph.1.0mm.1.0mm/warp.to.mni152.1.0mm.1.0mm.nii.gz --vg-thresh 1e-5 --lta1-inv /Applications/freesurfer/8.0.0/subjects/sub125/mri/transforms/synthmorph.1.0mm.1.0mm/tmp/reg.crop-to-invol.lta --lta2 /Applications/freesurfer/8.0.0/average/mni_icbm152_nlin_asym_09c/reg-targets/reg.1.0mm.cropped.to.1.0mm.lta
+dev
+
+--inras: /Applications/freesurfer/8.0.0/subjects/sub125/mri/transforms/synthmorph.1.0mm.1.0mm/tmp/deform.mgz input RAS warp.
+--insrcgeom: /Applications/freesurfer/8.0.0/subjects/sub125/mri/transforms/synthmorph.1.0mm.1.0mm/tmp/invol.crop.nii.gz atlas/source image (used for geometry).
+--outm3z: /Applications/freesurfer/8.0.0/subjects/sub125/mri/transforms/synthmorph.1.0mm.1.0mm/warp.to.mni152.1.0mm.1.0mm.nii.gz output M3Z.
+Setting vg_isEqual_Threshold to 0.000010
+Applying LTAs to the GCAM
+GCAMwrite(/Applications/freesurfer/8.0.0/subjects/sub125/mri/transforms/synthmorph.1.0mm.1.0mm/warp.to.mni152.1.0mm.1.0mm.nii.gz)
+[INFO] Warpfield::convert(): converting GCAM ...
+[INFO] Warpfield::convert(): gcam       [193 x 229 x 193]
+[INFO] Warpfield::convert(): gcam image [256 x 256 x 256]
+[INFO] Warpfield::convert(): gcam atlas [193 x 229 x 193]
+[INFO] Warpfield::convert(): total out of range voxel count: 0
+[INFO] niiWrite(): MGZ_INTENT_WARPMAP => NIFTI_INTENT_DISPVECT, intent_code = 1006, dimensions = {5, 193, 229, 193, 1, 3, 1, 1}
+[INFO] niiWrite(): convert displacement from 0 to 3
+mri_warp_convert successful.
+\n\nmri_ca_register -invert-and-save /Applications/freesurfer/8.0.0/subjects/sub125/mri/transforms/synthmorph.1.0mm.1.0mm/warp.to.mni152.1.0mm.1.0mm.nii.gz /Applications/freesurfer/8.0.0/subjects/sub125/mri/transforms/synthmorph.1.0mm.1.0mm/warp.to.mni152.1.0mm.1.0mm.inv.nii.gz
+INFO: using NIfTI-1 sform (sform_code=1)
+Loading gcam
+[INFO] niiRead(): intent_code = 1006, dimensions = {5, 193, 229, 193, 1, 3, 1, 1}
+[DEBUG] Warpfield::read() gcam->status = GCAM_LABELED
+setting orig areas to linear transform determinant scaled 1.00
+Computing inverse of GCAM
+Filling inverse of GCAM
+Allocating inv_gcam...(256, 256, 256)
+Saving inverse to /Applications/freesurfer/8.0.0/subjects/sub125/mri/transforms/synthmorph.1.0mm.1.0mm/warp.to.mni152.1.0mm.1.0mm.inv.nii.gz
+GCAMwrite(/Applications/freesurfer/8.0.0/subjects/sub125/mri/transforms/synthmorph.1.0mm.1.0mm/warp.to.mni152.1.0mm.1.0mm.inv.nii.gz)
+[INFO] Warpfield::convert(): converting GCAM ...
+[INFO] Warpfield::convert(): gcam       [256 x 256 x 256]
+[INFO] Warpfield::convert(): gcam image [193 x 229 x 193]
+[INFO] Warpfield::convert(): gcam atlas [256 x 256 x 256]
+[INFO] Warpfield::convert(): total out of range voxel count: 0
+[INFO] niiWrite(): MGZ_INTENT_WARPMAP => NIFTI_INTENT_DISPVECT, intent_code = 1006, dimensions = {5, 256, 256, 256, 1, 3, 1, 1}
+[INFO] niiWrite(): convert displacement from 0 to 3
+mri_vol2vol --regheader --mov /Applications/freesurfer/8.0.0/subjects/sub125/mri/transforms/synthmorph.1.0mm.1.0mm/tmp/synthmorph.out.mgz --targ /Applications/freesurfer/8.0.0/average/mni_icbm152_nlin_asym_09c/reg-targets/mni152.1.0mm.nii.gz --o /Applications/freesurfer/8.0.0/subjects/sub125/mri/transforms/synthmorph.1.0mm.1.0mm/tmp/morph.out.nii.gz
+movvol /Applications/freesurfer/8.0.0/subjects/sub125/mri/transforms/synthmorph.1.0mm.1.0mm/tmp/synthmorph.out.mgz
+targvol /Applications/freesurfer/8.0.0/average/mni_icbm152_nlin_asym_09c/reg-targets/mni152.1.0mm.nii.gz
+outvol /Applications/freesurfer/8.0.0/subjects/sub125/mri/transforms/synthmorph.1.0mm.1.0mm/tmp/morph.out.nii.gz
+invert 0
+tal    0
+talres 2
+regheader 1
+noresample 0
+interp  trilinear (1)
+precision  float (3)
+Gdiag_no  -1
+Synth      0
+SynthSeed  1743882045
+
+Computing registration based on scanner-to-scanner
+
+Final tkRAS-to-tkRAS Matrix is:
+ 1.00000   0.00000   0.00000  -0.50000;
+ 0.00000   1.00000   0.00000   13.50000;
+ 0.00000   0.00000   1.00000   0.00000;
+ 0.00000   0.00000   0.00000   1.00000;
+
+
+Vox2Vox Matrix is:
+ 1.00000   0.00000   0.00000  -20.00000;
+ 0.00000   1.00000   0.00000  -20.00000;
+ 0.00000   0.00000   1.00000  -2.00000;
+ 0.00000   0.00000   0.00000   1.00000;
+
+Resampling
+Output registration matrix is identity
+
+mri_vol2vol done
+mri_convert -rt nearest /Applications/freesurfer/8.0.0/subjects/sub125/mri/orig.mgz -at /Applications/freesurfer/8.0.0/subjects/sub125/mri/transforms/synthmorph.1.0mm.1.0mm/warp.to.mni152.1.0mm.1.0mm.nii.gz /Applications/freesurfer/8.0.0/subjects/sub125/mri/transforms/synthmorph.1.0mm.1.0mm/test.nii.gz
+mri_convert -rt nearest /Applications/freesurfer/8.0.0/subjects/sub125/mri/orig.mgz -at /Applications/freesurfer/8.0.0/subjects/sub125/mri/transforms/synthmorph.1.0mm.1.0mm/warp.to.mni152.1.0mm.1.0mm.nii.gz /Applications/freesurfer/8.0.0/subjects/sub125/mri/transforms/synthmorph.1.0mm.1.0mm/test.nii.gz 
+INFO: using NIfTI-1 sform (sform_code=1)
+reading from /Applications/freesurfer/8.0.0/subjects/sub125/mri/orig.mgz...
+TR=0.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, 0, 0)
+j_ras = (0, 0, -1)
+k_ras = (0, 1, 0)
+INFO: Reading transformation from file /Applications/freesurfer/8.0.0/subjects/sub125/mri/transforms/synthmorph.1.0mm.1.0mm/warp.to.mni152.1.0mm.1.0mm.nii.gz...
+INFO: Applying transformation from file /Applications/freesurfer/8.0.0/subjects/sub125/mri/transforms/synthmorph.1.0mm.1.0mm/warp.to.mni152.1.0mm.1.0mm.nii.gz...
+Applying morph_3d ...
+[INFO] niiRead(): intent_code = 1006, dimensions = {5, 193, 229, 193, 1, 3, 1, 1}
+[DEBUG] Warpfield::read() gcam->status = GCAM_LABELED
+setting orig areas to linear transform determinant scaled 1.00
+morphing to atlas with resample type 0
+writing to /Applications/freesurfer/8.0.0/subjects/sub125/mri/transforms/synthmorph.1.0mm.1.0mm/test.nii.gz...
+mri_diff --po /Applications/freesurfer/8.0.0/subjects/sub125/mri/transforms/synthmorph.1.0mm.1.0mm/test.nii.gz /Applications/freesurfer/8.0.0/subjects/sub125/mri/transforms/synthmorph.1.0mm.1.0mm/tmp/morph.out.nii.gz
+mri_diff --po /Applications/freesurfer/8.0.0/subjects/sub125/mri/transforms/synthmorph.1.0mm.1.0mm/test.nii.gz /Applications/freesurfer/8.0.0/subjects/sub125/mri/transforms/synthmorph.1.0mm.1.0mm/tmp/morph.out.nii.gz 
+diffcount 4496701
+Volumes differ in pixel data
+maxdiff 132.53381348 at 106 25 6 0
+tkmeditfv -f /Applications/freesurfer/8.0.0/average/mni_icbm152_nlin_asym_09c/reg-targets/mni152.1.0mm.nii.gz -aux /Applications/freesurfer/8.0.0/subjects/sub125/mri/transforms/synthmorph.1.0mm.1.0mm/test.nii.gz
+ 
+Started at Fri Mar 28 15:18:44 CDT 2025 
+Ended   at Fri Mar 28 15:43:55 CDT 2025
+Fs-Synthmorph-Reg-Run-Time-Sec 1511
+Fs-Synthmorph-Reg-Run-Time-Min 25.18
+Fs-Synthmorph-Reg-Run-Time-Hours 0.42
+ 
+fs-synthmorph-reg Done

@@ -1,0 +1,62 @@
+Log file for fs-synthmorph-reg
+Fri Mar 28 15:17:42 CDT 2025
+
+setenv SUBJECTS_DIR /Applications/freesurfer/8.0.0/subjects
+cd /Applications/freesurfer/8.0.0/subjects/sub125
+/Applications/freesurfer/8.0.0/bin/fs-synthmorph-reg --i /Applications/freesurfer/8.0.0/subjects/sub125/mri/synthstrip.mgz --t /Applications/freesurfer/8.0.0/average/mni305.cor.stripped.mgz --affine-only --o /Applications/freesurfer/8.0.0/subjects/sub125/mri/transforms/synthmorph.mni305 --threads 1
+-rwxr-xr-x  1 root  wheel  30890 Feb  5 03:56 /Applications/freesurfer/8.0.0/bin/fs-synthmorph-reg
+
+freesurfer-macOS-darwin_arm64-8.0.0-20250205-0f2bd3a
+$Id$
+Darwin H2WHK1CLQ6P0 24.3.0 Darwin Kernel Version 24.3.0: Thu Jan  2 20:24:06 PST 2025; root:xnu-11215.81.4~3/RELEASE_ARM64_T8103 arm64
+pid 4648
+Fri Mar 28 15:17:42 CDT 2025
+\n\n
+mri_synthmorph -m affine -t /Applications/freesurfer/8.0.0/subjects/sub125/mri/transforms/synthmorph.mni305/aff.lta /Applications/freesurfer/8.0.0/subjects/sub125/mri/synthstrip.mgz /Applications/freesurfer/8.0.0/average/mni305.cor.stripped.mgz -j 1
+Thank you for choosing SynthMorph. Please cite us!
+
+SynthMorph: learning contrast-invariant registration without acquired images
+Hoffmann M, Billot B, Greve DN, Iglesias JE, Fischl B, Dalca AV
+IEEE Transactions on Medical Imaging, 41 (3), 543-558, 2022
+https://doi.org/10.1109/TMI.2021.3116879
+
+Anatomy-specific acquisition-agnostic affine registration learned from
+fictitious images
+Hoffmann M, Hoopes A, Fischl B*, Dalca AV* (*equal contribution)
+SPIE Medical Imaging: Image Processing, 12464, 1246402, 2023
+https://doi.org/10.1117/12.2653251
+https://synthmorph.io/#papers (PDF)
+
+Anatomy-aware and acquisition-agnostic joint registration with SynthMorph
+Hoffmann M, Hoopes A, Greve DN, Fischl B*, Dalca AV* (*equal contribution)
+Imaging Neuroscience, 2, 1-33, 2024
+https://doi.org/10.1162/imag_a_00197
+
+Website: https://synthmorph.io
+lta_convert --invert --inlta /Applications/freesurfer/8.0.0/subjects/sub125/mri/transforms/synthmorph.mni305/aff.lta --outlta /Applications/freesurfer/8.0.0/subjects/sub125/mri/transforms/synthmorph.mni305/reg.targ_to_invol.lta
+dev
+
+--invert: will invert transform.
+--inlta: /Applications/freesurfer/8.0.0/subjects/sub125/mri/transforms/synthmorph.mni305/aff.lta input LTA transform.
+--outlta: /Applications/freesurfer/8.0.0/subjects/sub125/mri/transforms/synthmorph.mni305/reg.targ_to_invol.lta output LTA.
+ LTA read, type : 1
+ 0.96821   0.01780  -0.01884   12.91055;
+-0.03252   1.02055   0.27192   67.70581;
+ 0.03236  -0.19917   0.99496   75.00665;
+ 0.00000   0.00000   0.00000   1.00000;
+Writing  LTA to file /Applications/freesurfer/8.0.0/subjects/sub125/mri/transforms/synthmorph.mni305/reg.targ_to_invol.lta...
+lta_convert successful.
+\n\n
+
+To check affine registration
+tkregisterfv --mov /Applications/freesurfer/8.0.0/subjects/sub125/mri/synthstrip.mgz --targ /Applications/freesurfer/8.0.0/average/mni305.cor.stripped.mgz --reg /Applications/freesurfer/8.0.0/subjects/sub125/mri/transforms/synthmorph.mni305/aff.lta
+
+AffineOnly specified, so exiting now
+ 
+Started at Fri Mar 28 15:17:42 CDT 2025 
+Ended   at Fri Mar 28 15:18:43 CDT 2025
+Fs-Synthmorph-Reg-Run-Time-Sec 61
+Fs-Synthmorph-Reg-Run-Time-Min 1.02
+Fs-Synthmorph-Reg-Run-Time-Hours 0.02
+ 
+fs-synthmorph-reg Done

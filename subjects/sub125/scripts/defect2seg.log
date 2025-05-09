@@ -1,0 +1,76 @@
+Log file for defect2seg
+Fri Mar 28 16:02:56 CDT 2025
+
+setenv SUBJECTS_DIR /Applications/freesurfer/8.0.0/subjects
+cd /Applications/freesurfer/8.0.0/subjects/sub125/scripts
+/Applications/freesurfer/8.0.0/bin/defect2seg --s sub125 --cortex
+
+freesurfer-macOS-darwin_arm64-8.0.0-20250205-0f2bd3a
+defect2seg dev
+Darwin H2WHK1CLQ6P0 24.3.0 Darwin Kernel Version 24.3.0: Thu Jan  2 20:24:06 PST 2025; root:xnu-11215.81.4~3/RELEASE_ARM64_T8103 arm64
+pid 11498
+mri_label2label --label-cortex /Applications/freesurfer/8.0.0/subjects/sub125/surf/lh.orig.nofix /Applications/freesurfer/8.0.0/subjects/sub125/mri/aseg.presurf.mgz 0 /Applications/freesurfer/8.0.0/subjects/sub125/label/lh.nofix.cortex.label
+
+ Generating cortex label... RemoveHipAmgy=0
+ NucAccIsMedialWall=0
+ mris->useRealRAS=0
+13 non-cortical segments detected
+only using segment with 8008 vertices
+erasing segment 0 (vno[0] = 25226)
+erasing segment 2 (vno[0] = 85816)
+erasing segment 3 (vno[0] = 92730)
+erasing segment 4 (vno[0] = 107482)
+erasing segment 5 (vno[0] = 108520)
+erasing segment 6 (vno[0] = 109536)
+erasing segment 7 (vno[0] = 109599)
+erasing segment 8 (vno[0] = 111706)
+erasing segment 9 (vno[0] = 111821)
+erasing segment 10 (vno[0] = 112836)
+erasing segment 11 (vno[0] = 113014)
+erasing segment 12 (vno[0] = 118145)
+mri_label2vol --defects /Applications/freesurfer/8.0.0/subjects/sub125/surf/lh.orig.nofix /Applications/freesurfer/8.0.0/subjects/sub125/surf/lh.defect_labels /Applications/freesurfer/8.0.0/subjects/sub125/mri/orig.mgz 1000 0 /Applications/freesurfer/8.0.0/subjects/sub125/mri/surface.defects.mgz /Applications/freesurfer/8.0.0/subjects/sub125/label/lh.nofix.cortex.label
+ supposed to be reproducible but seed not set
+Contraining to label /Applications/freesurfer/8.0.0/subjects/sub125/label/lh.nofix.cortex.label
+Changing input type 0 to MRI_INT
+Converting defects to volume: offset=1000, merge=0
+Writing to /Applications/freesurfer/8.0.0/subjects/sub125/mri/surface.defects.mgz
+mris_defects_pointset -s /Applications/freesurfer/8.0.0/subjects/sub125/surf/lh.orig.nofix -d /Applications/freesurfer/8.0.0/subjects/sub125/surf/lh.defect_labels -o /Applications/freesurfer/8.0.0/subjects/sub125/surf/lh.defects.pointset --label /Applications/freesurfer/8.0.0/subjects/sub125/label/lh.nofix.cortex.label
+Reading in surface /Applications/freesurfer/8.0.0/subjects/sub125/surf/lh.orig.nofix
+Reading in defect segmentation /Applications/freesurfer/8.0.0/subjects/sub125/surf/lh.defect_labels
+Reading in label /Applications/freesurfer/8.0.0/subjects/sub125/label/lh.nofix.cortex.label
+#VMPC# mris_defects_pointset 0
+mris_defects_pointset done
+mri_label2label --label-cortex /Applications/freesurfer/8.0.0/subjects/sub125/surf/rh.orig.nofix /Applications/freesurfer/8.0.0/subjects/sub125/mri/aseg.presurf.mgz 0 /Applications/freesurfer/8.0.0/subjects/sub125/label/rh.nofix.cortex.label
+
+ Generating cortex label... RemoveHipAmgy=0
+ NucAccIsMedialWall=0
+ mris->useRealRAS=0
+9 non-cortical segments detected
+only using segment with 8328 vertices
+erasing segment 1 (vno[0] = 75359)
+erasing segment 2 (vno[0] = 83802)
+erasing segment 3 (vno[0] = 85109)
+erasing segment 4 (vno[0] = 112207)
+erasing segment 5 (vno[0] = 113455)
+erasing segment 6 (vno[0] = 114433)
+erasing segment 7 (vno[0] = 117628)
+erasing segment 8 (vno[0] = 129605)
+mri_label2vol --defects /Applications/freesurfer/8.0.0/subjects/sub125/surf/rh.orig.nofix /Applications/freesurfer/8.0.0/subjects/sub125/surf/rh.defect_labels /Applications/freesurfer/8.0.0/subjects/sub125/mri/surface.defects.mgz 2000 1 /Applications/freesurfer/8.0.0/subjects/sub125/mri/surface.defects.mgz /Applications/freesurfer/8.0.0/subjects/sub125/label/rh.nofix.cortex.label
+ supposed to be reproducible but seed not set
+Contraining to label /Applications/freesurfer/8.0.0/subjects/sub125/label/rh.nofix.cortex.label
+Converting defects to volume: offset=2000, merge=1
+Writing to /Applications/freesurfer/8.0.0/subjects/sub125/mri/surface.defects.mgz
+mris_defects_pointset -s /Applications/freesurfer/8.0.0/subjects/sub125/surf/rh.orig.nofix -d /Applications/freesurfer/8.0.0/subjects/sub125/surf/rh.defect_labels -o /Applications/freesurfer/8.0.0/subjects/sub125/surf/rh.defects.pointset --label /Applications/freesurfer/8.0.0/subjects/sub125/label/rh.nofix.cortex.label
+Reading in surface /Applications/freesurfer/8.0.0/subjects/sub125/surf/rh.orig.nofix
+Reading in defect segmentation /Applications/freesurfer/8.0.0/subjects/sub125/surf/rh.defect_labels
+Reading in label /Applications/freesurfer/8.0.0/subjects/sub125/label/rh.nofix.cortex.label
+#VMPC# mris_defects_pointset 0
+mris_defects_pointset done
+ 
+Started at Fri Mar 28 16:02:56 CDT 2025 
+Ended   at Fri Mar 28 16:03:20 CDT 2025
+Defect2seg-Run-Time-Sec 24
+Defect2seg-Run-Time-Min 0.48
+Defect2seg-Run-Time-Hours 0.01
+ 
+defect2seg Done

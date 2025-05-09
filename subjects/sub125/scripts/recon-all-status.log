@@ -1,0 +1,79 @@
+status file for recon-all
+Fri Mar 28 15:02:53 CDT 2025
+#@# MotionCor Fri Mar 28 15:02:54 CDT 2025
+#@# Nu Intensity Correction Fri Mar 28 15:43:55 CDT 2025
+#@# Intensity Normalization Fri Mar 28 15:45:06 CDT 2025
+\n#@# MCADura Segmentation Fri Mar 28 15:46:09 CDT 2025
+\n#@# VSinus Segmentation Fri Mar 28 15:46:30 CDT 2025
+#@# EM Registration Fri Mar 28 15:46:59 CDT 2025
+#@# CA Normalize Fri Mar 28 15:51:23 CDT 2025
+\n#@# EntoWM Segmentation Fri Mar 28 15:52:04 CDT 2025
+#@# CC Seg Fri Mar 28 15:52:32 CDT 2025
+#@# Merge ASeg Fri Mar 28 15:52:48 CDT 2025
+#@# Intensity Normalization2 Fri Mar 28 15:52:48 CDT 2025
+#@# Mask BFS Fri Mar 28 15:54:19 CDT 2025
+#@# WM Segmentation Fri Mar 28 15:54:24 CDT 2025
+#@# Fill Fri Mar 28 15:56:02 CDT 2025
+#@# Tessellate lh Fri Mar 28 15:56:38 CDT 2025
+#@# Tessellate rh Fri Mar 28 15:56:40 CDT 2025
+#@# Smooth1 lh Fri Mar 28 15:56:43 CDT 2025
+#@# Smooth1 rh Fri Mar 28 15:56:45 CDT 2025
+#@# Inflation1 lh Fri Mar 28 15:56:47 CDT 2025
+#@# Inflation1 rh Fri Mar 28 15:57:00 CDT 2025
+#@# QSphere lh Fri Mar 28 15:57:13 CDT 2025
+#@# QSphere rh Fri Mar 28 15:58:45 CDT 2025
+#@# Fix Topology lh Fri Mar 28 16:00:32 CDT 2025
+#@# Fix Topology rh Fri Mar 28 16:01:44 CDT 2025
+#@# Smooth2 lh Fri Mar 28 16:09:35 CDT 2025
+#@# Smooth2 rh Fri Mar 28 16:09:38 CDT 2025
+#@# Inflation2 lh Fri Mar 28 16:09:40 CDT 2025
+#@# Inflation2 rh Fri Mar 28 16:09:55 CDT 2025
+#@# Curv .H and .K lh Fri Mar 28 16:10:10 CDT 2025
+#@# Curv .H and .K rh Fri Mar 28 16:10:45 CDT 2025
+#@# Sphere lh Fri Mar 28 16:11:21 CDT 2025
+#@# Sphere rh Fri Mar 28 16:18:49 CDT 2025
+#@# Surf Reg lh Fri Mar 28 16:27:26 CDT 2025
+#@# Surf Reg rh Fri Mar 28 16:40:25 CDT 2025
+#@# Jacobian white lh Fri Mar 28 16:53:54 CDT 2025
+#@# Jacobian white rh Fri Mar 28 16:53:55 CDT 2025
+#@# AvgCurv lh Fri Mar 28 16:53:56 CDT 2025
+#@# AvgCurv rh Fri Mar 28 16:53:57 CDT 2025
+#@# Cortical Parc lh Fri Mar 28 16:53:57 CDT 2025
+#@# Cortical Parc rh Fri Mar 28 16:54:03 CDT 2025
+#@# white curv lh Fri Mar 28 17:03:27 CDT 2025
+#@# white area lh Fri Mar 28 17:03:28 CDT 2025
+#@# pial curv lh Fri Mar 28 17:03:29 CDT 2025
+#@# pial area lh Fri Mar 28 17:03:30 CDT 2025
+#@# thickness lh Fri Mar 28 17:03:31 CDT 2025
+#@# area and vertex vol lh Fri Mar 28 17:03:53 CDT 2025
+#@# white curv rh Fri Mar 28 17:03:55 CDT 2025
+#@# white area rh Fri Mar 28 17:03:56 CDT 2025
+#@# pial curv rh Fri Mar 28 17:03:57 CDT 2025
+#@# pial area rh Fri Mar 28 17:03:58 CDT 2025
+#@# thickness rh Fri Mar 28 17:03:59 CDT 2025
+#@# area and vertex vol rh Fri Mar 28 17:04:22 CDT 2025
+#@# Curvature Stats lh Fri Mar 28 17:04:23 CDT 2025
+#@# Curvature Stats rh Fri Mar 28 17:04:25 CDT 2025
+#@# Cortical ribbon mask Fri Mar 28 17:04:27 CDT 2025
+#@# Cortical Parc 2 lh Fri Mar 28 17:08:13 CDT 2025
+#@# Cortical Parc 2 rh Fri Mar 28 17:08:21 CDT 2025
+#@# Cortical Parc 3 lh Fri Mar 28 17:08:29 CDT 2025
+#@# Cortical Parc 3 rh Fri Mar 28 17:08:35 CDT 2025
+#@# WM/GM Contrast lh Fri Mar 28 17:08:41 CDT 2025
+#@# WM/GM Contrast rh Fri Mar 28 17:08:44 CDT 2025
+#@# Relabel Hypointensities Fri Mar 28 17:08:46 CDT 2025
+#@# APas-to-ASeg Fri Mar 28 17:08:55 CDT 2025
+#@# AParc-to-ASeg aparc Fri Mar 28 17:09:03 CDT 2025
+#@# AParc-to-ASeg aparc.a2009s Fri Mar 28 17:10:39 CDT 2025
+#@# AParc-to-ASeg aparc.DKTatlas Fri Mar 28 17:12:16 CDT 2025
+#@# WMParc Fri Mar 28 17:13:53 CDT 2025
+#@# Parcellation Stats lh Fri Mar 28 17:17:07 CDT 2025
+#@# Parcellation Stats rh Fri Mar 28 17:17:21 CDT 2025
+#@# Parcellation Stats 2 lh Fri Mar 28 17:17:36 CDT 2025
+#@# Parcellation Stats 2 rh Fri Mar 28 17:17:44 CDT 2025
+#@# Parcellation Stats 3 lh Fri Mar 28 17:17:52 CDT 2025
+#@# Parcellation Stats 3 rh Fri Mar 28 17:17:59 CDT 2025
+#@# ASeg Stats Fri Mar 28 17:18:07 CDT 2025
+#@# BA_exvivo Labels lh Fri Mar 28 17:19:46 CDT 2025
+#@# BA_exvivo Labels rh Fri Mar 28 17:21:49 CDT 2025
+recon-all -s sub125 finished without error at Fri Mar 28 17:23:53 CDT 2025

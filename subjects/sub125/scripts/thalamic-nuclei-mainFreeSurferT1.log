@@ -1,0 +1,782 @@
+------------------------------
+USER root
+HOST H2WHK1CLQ6P0
+PROCESSID 6452 
+PROCESSOR arm64
+OS Darwin
+ITK_GLOBAL_DEFAULT_NUMBER_OF_THREADS 1 
+Darwin H2WHK1CLQ6P0 24.4.0 Darwin Kernel Version 24.4.0: Wed Mar 19 21:12:54 PDT 2025; root:xnu-11417.101.15~1/RELEASE_ARM64_T8103 arm64
+------------------------------
+freesurfer-macOS-darwin_arm64-8.0.0-20250205-0f2bd3a
+ 
+setenv SUBJECTS_DIR /Applications/freesurfer/8.0.0/subjects
+cd /Applications/freesurfer/8.0.0/subjects
+/Applications/freesurfer/8.0.0/bin/segmentThalamicNuclei.sh sub125
+
+#--------------------------------------------
+#@# Thalamic Nuclei processing Mon Apr  7 15:45:08 CDT 2025
+------------------------------------------
+Setting up environment variables
+---
+DYLD_LIBRARY_PATH is .:/Applications/freesurfer/8.0.0/MCRv97//runtime/maci64:/Applications/freesurfer/8.0.0/MCRv97//bin/maci64:/Applications/freesurfer/8.0.0/MCRv97//sys/os/maci64:/Applications/freesurfer/8.0.0/lib/gcc/lib:
+Registering imageDump.mgz to mask from ASEG
+Reading contexts of file /Applications/freesurfer/8.0.0/average/ThalamicNuclei/atlas/compressionLookupTable.txt
+Constructing image-to-world transform from header information (aseg_TH_DE.mgz)
+Constructing image-to-world transform from header information (/Applications/freesurfer/8.0.0/subjects/sub125/tmp/THnuclei_v13_useTwoComponents_1_T1/imageDump.mgz)
+Transforming points
+Transforming points
+Reading contexts of file /Applications/freesurfer/8.0.0/average/ThalamicNuclei/atlas/compressionLookupTable.txt
+--------------
+Making Unknown map to reduced label 1
+--------------
+Making Left-Cerebral-White-Matter map to reduced label 2
+--------------
+Making Left-Cerebral-Cortex map to reduced label 3
+--------------
+Making Left-Cerebellum-Cortex map to reduced label 4
+--------------
+Making Left-Cerebellum-White-Matter map to reduced label 5
+--------------
+Making Brain-Stem map to reduced label 6
+--------------
+Making Left-Lateral-Ventricle map to reduced label 7
+--------------
+Making Left-choroid-plexus map to reduced label 8
+--------------
+Making Left-Putamen map to reduced label 9
+--------------
+Making Left-Pallidum map to reduced label 10
+--------------
+Making Left-Accumbens-area map to reduced label 11
+--------------
+Making Left-Caudate map to reduced label 12
+--------------
+Making Left-L-Sg map to reduced label 13
+Making Left-LGN map to reduced label 13
+Making Left-MGN map to reduced label 13
+Making Left-PuI map to reduced label 13
+Making Left-PuM map to reduced label 13
+Making Left-PuL map to reduced label 13
+Making Left-PuA map to reduced label 13
+Making Left-R map to reduced label 13
+Making Left-MV(Re) map to reduced label 13
+Making Left-Pf map to reduced label 13
+Making Left-CM map to reduced label 13
+Making Left-LP map to reduced label 13
+Making Left-VLa map to reduced label 13
+Making Left-VPL map to reduced label 13
+Making Left-VLp map to reduced label 13
+Making Left-MDm map to reduced label 13
+Making Left-VM map to reduced label 13
+Making Left-CeM map to reduced label 13
+Making Left-MDl map to reduced label 13
+Making Left-Pc map to reduced label 13
+Making Left-CL map to reduced label 13
+Making Left-VA map to reduced label 13
+Making Left-AV map to reduced label 13
+Making Left-VAmc map to reduced label 13
+Making Left-Pt map to reduced label 13
+Making Left-LD map to reduced label 13
+Making Left-VentralDC map to reduced label 13
+--------------
+Making Right-L-Sg map to reduced label 14
+Making Right-LGN map to reduced label 14
+Making Right-MGN map to reduced label 14
+Making Right-PuI map to reduced label 14
+Making Right-PuM map to reduced label 14
+Making Right-PuL map to reduced label 14
+Making Right-PuA map to reduced label 14
+Making Right-R map to reduced label 14
+Making Right-MV(Re) map to reduced label 14
+Making Right-Pf map to reduced label 14
+Making Right-CM map to reduced label 14
+Making Right-LP map to reduced label 14
+Making Right-VLa map to reduced label 14
+Making Right-VPL map to reduced label 14
+Making Right-VLp map to reduced label 14
+Making Right-MDm map to reduced label 14
+Making Right-VM map to reduced label 14
+Making Right-CeM map to reduced label 14
+Making Right-MDl map to reduced label 14
+Making Right-Pc map to reduced label 14
+Making Right-CL map to reduced label 14
+Making Right-VA map to reduced label 14
+Making Right-AV map to reduced label 14
+Making Right-VAmc map to reduced label 14
+Making Right-Pt map to reduced label 14
+Making Right-LD map to reduced label 14
+Making Right-VentralDC map to reduced label 14
+Smoothing mesh collection with kernel size 3.000000 ...Smoothing class: 0
+Smoothing class: 1
+Smoothing class: 2
+Smoothing class: 3
+Smoothing class: 4
+Smoothing class: 5
+Smoothing class: 6
+Smoothing class: 7
+Smoothing class: 8
+Smoothing class: 9
+Smoothing class: 10
+Smoothing class: 11
+Smoothing class: 12
+Smoothing class: 13
+done
+numberOfContrasts = 1
+Image: 4
+AtlasMeshToIntensityImage
+1
+0.398942
+SLIDING
+L-BFGS
+Verbose: 0
+MaximalDeformationStopCriterion: 1e-10
+LineSearchMaximalDeformationIntervalStopCriterion: 1e-10
+MaximumNumberOfIterations: 1000
+BFGS-MaximumMemoryLength: 12
+Resolution 1, iteration 1
+Resolution 1, iteration 11
+Resolution 1, iteration 21
+Resolution 1, iteration 31
+Resolution 1, iteration 41
+Resolution 1, iteration 51
+Resolution 1, iteration 61
+Resolution 1, iteration 71
+Resolution 1, iteration 81
+Resolution 1, iteration 91
+Resolution 1, iteration 101
+Resolution 1, iteration 111
+Resolution 1, iteration 121
+Resolution 1, iteration 131
+Resolution 1, iteration 141
+Resolution 1, iteration 151
+Resolution 1, iteration 161
+Resolution 1, iteration 171
+Resolution 1, iteration 181
+Resolution 1, iteration 191
+Resolution 1, iteration 201
+Resolution 1, iteration 211
+Resolution 1, iteration 221
+Resolution 1, iteration 231
+Resolution 1, iteration 241
+Resolution 1, iteration 251
+Resolution 1, iteration 261
+Resolution 1, iteration 271
+Resolution 1, iteration 281
+Resolution 1, iteration 291
+Smoothing mesh collection with kernel size 2.000000 ...Smoothing class: 0
+Smoothing class: 1
+Smoothing class: 2
+Smoothing class: 3
+Smoothing class: 4
+Smoothing class: 5
+Smoothing class: 6
+Smoothing class: 7
+Smoothing class: 8
+Smoothing class: 9
+Smoothing class: 10
+Smoothing class: 11
+Smoothing class: 12
+Smoothing class: 13
+done
+numberOfContrasts = 1
+Image: 4
+AtlasMeshToIntensityImage
+1
+0.398942
+SLIDING
+L-BFGS
+Verbose: 0
+MaximalDeformationStopCriterion: 1e-10
+LineSearchMaximalDeformationIntervalStopCriterion: 1e-10
+MaximumNumberOfIterations: 1000
+BFGS-MaximumMemoryLength: 12
+Resolution 2, iteration 1
+Resolution 2, iteration 11
+Resolution 2, iteration 21
+Resolution 2, iteration 31
+Resolution 2, iteration 41
+Resolution 2, iteration 51
+Resolution 2, iteration 61
+Resolution 2, iteration 71
+Resolution 2, iteration 81
+Resolution 2, iteration 91
+Resolution 2, iteration 101
+Resolution 2, iteration 111
+Resolution 2, iteration 121
+Resolution 2, iteration 131
+Resolution 2, iteration 141
+Fitting mesh to synthetic image from ASEG took 455.5617 seconds
+Transforming points
+Transforming points
+threshold mask volume at 0.5
+Constructing image-to-world transform from header information (T1resampled.mgz)
+Constructing image-to-world transform from header information (/Applications/freesurfer/8.0.0/subjects/sub125/tmp/THnuclei_v13_useTwoComponents_1_T1/imageDump.mgz)
+Transforming points
+Transforming points
+Reading contexts of file /Applications/freesurfer/8.0.0/average/ThalamicNuclei/atlas/compressionLookupTable.txt
+--------------
+Making Unknown map to reduced label 1
+--------------
+Making Left-Cerebral-White-Matter map to reduced label 2
+Making Left-R map to reduced label 2
+Making Right-R map to reduced label 2
+--------------
+Making Left-Cerebral-Cortex map to reduced label 3
+--------------
+Making Left-Cerebellum-Cortex map to reduced label 4
+--------------
+Making Left-Cerebellum-White-Matter map to reduced label 5
+--------------
+Making Brain-Stem map to reduced label 6
+--------------
+Making Left-Lateral-Ventricle map to reduced label 7
+--------------
+Making Left-choroid-plexus map to reduced label 8
+--------------
+Making Left-Putamen map to reduced label 9
+--------------
+Making Left-Pallidum map to reduced label 10
+--------------
+Making Left-Accumbens-area map to reduced label 11
+--------------
+Making Left-Caudate map to reduced label 12
+--------------
+Making Left-VentralDC map to reduced label 13
+Making Right-VentralDC map to reduced label 13
+--------------
+Making Left-L-Sg map to reduced label 14
+Making Left-LGN map to reduced label 14
+Making Left-MGN map to reduced label 14
+Making Left-PuI map to reduced label 14
+Making Left-PuM map to reduced label 14
+Making Left-PuL map to reduced label 14
+Making Left-PuA map to reduced label 14
+Making Left-MV(Re) map to reduced label 14
+Making Left-Pf map to reduced label 14
+Making Left-CM map to reduced label 14
+Making Left-LP map to reduced label 14
+Making Left-VLa map to reduced label 14
+Making Left-VPL map to reduced label 14
+Making Left-VLp map to reduced label 14
+Making Left-MDm map to reduced label 14
+Making Left-VM map to reduced label 14
+Making Left-CeM map to reduced label 14
+Making Left-MDl map to reduced label 14
+Making Left-Pc map to reduced label 14
+Making Left-CL map to reduced label 14
+Making Left-VA map to reduced label 14
+Making Left-AV map to reduced label 14
+Making Left-VAmc map to reduced label 14
+Making Left-Pt map to reduced label 14
+Making Left-LD map to reduced label 14
+Making Right-L-Sg map to reduced label 14
+Making Right-LGN map to reduced label 14
+Making Right-MGN map to reduced label 14
+Making Right-PuI map to reduced label 14
+Making Right-PuM map to reduced label 14
+Making Right-PuL map to reduced label 14
+Making Right-PuA map to reduced label 14
+Making Right-MV(Re) map to reduced label 14
+Making Right-Pf map to reduced label 14
+Making Right-CM map to reduced label 14
+Making Right-LP map to reduced label 14
+Making Right-VLa map to reduced label 14
+Making Right-VPL map to reduced label 14
+Making Right-VLp map to reduced label 14
+Making Right-MDm map to reduced label 14
+Making Right-VM map to reduced label 14
+Making Right-CeM map to reduced label 14
+Making Right-MDl map to reduced label 14
+Making Right-Pc map to reduced label 14
+Making Right-CL map to reduced label 14
+Making Right-VA map to reduced label 14
+Making Right-AV map to reduced label 14
+Making Right-VAmc map to reduced label 14
+Making Right-Pt map to reduced label 14
+Making Right-LD map to reduced label 14
+Computing hyperparameters for estimation of Gaussian parameters
+Smoothing mesh collection with kernel size 1.500000 ...Smoothing class: 0
+Smoothing class: 1
+Smoothing class: 2
+Smoothing class: 3
+Smoothing class: 4
+Smoothing class: 5
+Smoothing class: 6
+Smoothing class: 7
+Smoothing class: 8
+Smoothing class: 9
+Smoothing class: 10
+Smoothing class: 11
+Smoothing class: 12
+Smoothing class: 13
+done
+Resolution level: 1 of 4
+Iteration 1 of 7
+EM converged!
+numberOfContrasts = 1
+Image: 0
+AtlasMeshToIntensityImage
+1
+0.398942
+SLIDING
+L-BFGS
+Verbose: 0
+MaximalDeformationStopCriterion: 1e-10
+LineSearchMaximalDeformationIntervalStopCriterion: 1e-10
+MaximumNumberOfIterations: 1000
+BFGS-MaximumMemoryLength: 12
+Resolution level 1 iteration 1 deformation iterations 1
+Resolution level 1 iteration 1 deformation iterations 11
+Resolution level 1 iteration 1 deformation iterations 21
+Iteration 2 of 7
+EM converged!
+numberOfContrasts = 1
+Image: 0
+AtlasMeshToIntensityImage
+1
+0.398942
+SLIDING
+L-BFGS
+Verbose: 0
+MaximalDeformationStopCriterion: 1e-10
+LineSearchMaximalDeformationIntervalStopCriterion: 1e-10
+MaximumNumberOfIterations: 1000
+BFGS-MaximumMemoryLength: 12
+Resolution level 1 iteration 2 deformation iterations 1
+Resolution level 1 iteration 2 deformation iterations 11
+Resolution level 1 iteration 2 deformation iterations 21
+Iteration 3 of 7
+EM converged!
+numberOfContrasts = 1
+Image: 0
+AtlasMeshToIntensityImage
+1
+0.398942
+SLIDING
+L-BFGS
+Verbose: 0
+MaximalDeformationStopCriterion: 1e-10
+LineSearchMaximalDeformationIntervalStopCriterion: 1e-10
+MaximumNumberOfIterations: 1000
+BFGS-MaximumMemoryLength: 12
+Resolution level 1 iteration 3 deformation iterations 1
+Resolution level 1 iteration 3 deformation iterations 11
+Resolution level 1 iteration 3 deformation iterations 21
+Iteration 4 of 7
+EM converged!
+numberOfContrasts = 1
+Image: 0
+AtlasMeshToIntensityImage
+1
+0.398942
+SLIDING
+L-BFGS
+Verbose: 0
+MaximalDeformationStopCriterion: 1e-10
+LineSearchMaximalDeformationIntervalStopCriterion: 1e-10
+MaximumNumberOfIterations: 1000
+BFGS-MaximumMemoryLength: 12
+Resolution level 1 iteration 4 deformation iterations 1
+Resolution level 1 iteration 4 deformation iterations 11
+Resolution level 1 iteration 4 deformation iterations 21
+Iteration 5 of 7
+EM converged!
+numberOfContrasts = 1
+Image: 0
+AtlasMeshToIntensityImage
+1
+0.398942
+SLIDING
+L-BFGS
+Verbose: 0
+MaximalDeformationStopCriterion: 1e-10
+LineSearchMaximalDeformationIntervalStopCriterion: 1e-10
+MaximumNumberOfIterations: 1000
+BFGS-MaximumMemoryLength: 12
+Resolution level 1 iteration 5 deformation iterations 1
+Resolution level 1 iteration 5 deformation iterations 11
+Resolution level 1 iteration 5 deformation iterations 21
+Iteration 6 of 7
+EM converged!
+numberOfContrasts = 1
+Image: 0
+AtlasMeshToIntensityImage
+1
+0.398942
+SLIDING
+L-BFGS
+Verbose: 0
+MaximalDeformationStopCriterion: 1e-10
+LineSearchMaximalDeformationIntervalStopCriterion: 1e-10
+MaximumNumberOfIterations: 1000
+BFGS-MaximumMemoryLength: 12
+Resolution level 1 iteration 6 deformation iterations 1
+Resolution level 1 iteration 6 deformation iterations 11
+Resolution level 1 iteration 6 deformation iterations 21
+Iteration 7 of 7
+EM converged!
+numberOfContrasts = 1
+Image: 0
+AtlasMeshToIntensityImage
+1
+0.398942
+SLIDING
+L-BFGS
+Verbose: 0
+MaximalDeformationStopCriterion: 1e-10
+LineSearchMaximalDeformationIntervalStopCriterion: 1e-10
+MaximumNumberOfIterations: 1000
+BFGS-MaximumMemoryLength: 12
+Resolution level 1 iteration 7 deformation iterations 1
+Resolution level 1 iteration 7 deformation iterations 11
+Resolution level 1 iteration 7 deformation iterations 21
+Reading contexts of file /Applications/freesurfer/8.0.0/average/ThalamicNuclei/atlas/compressionLookupTable.txt
+--------------
+Making Unknown map to reduced label 1
+--------------
+Making Left-Cerebral-White-Matter map to reduced label 2
+Making Left-R map to reduced label 2
+Making Right-R map to reduced label 2
+--------------
+Making Left-Cerebral-Cortex map to reduced label 3
+--------------
+Making Left-Cerebellum-Cortex map to reduced label 4
+--------------
+Making Left-Cerebellum-White-Matter map to reduced label 5
+--------------
+Making Brain-Stem map to reduced label 6
+--------------
+Making Left-Lateral-Ventricle map to reduced label 7
+--------------
+Making Left-choroid-plexus map to reduced label 8
+--------------
+Making Left-Putamen map to reduced label 9
+--------------
+Making Left-Pallidum map to reduced label 10
+--------------
+Making Left-Accumbens-area map to reduced label 11
+--------------
+Making Left-Caudate map to reduced label 12
+--------------
+Making Left-VentralDC map to reduced label 13
+Making Right-VentralDC map to reduced label 13
+--------------
+Making Left-L-Sg map to reduced label 14
+Making Left-LGN map to reduced label 14
+Making Left-MGN map to reduced label 14
+Making Left-MV(Re) map to reduced label 14
+Making Left-Pf map to reduced label 14
+Making Left-CM map to reduced label 14
+Making Left-LP map to reduced label 14
+Making Left-VLa map to reduced label 14
+Making Left-VPL map to reduced label 14
+Making Left-VLp map to reduced label 14
+Making Left-VM map to reduced label 14
+Making Left-CeM map to reduced label 14
+Making Left-Pc map to reduced label 14
+Making Left-CL map to reduced label 14
+Making Left-VA map to reduced label 14
+Making Left-AV map to reduced label 14
+Making Left-VAmc map to reduced label 14
+Making Left-Pt map to reduced label 14
+Making Left-LD map to reduced label 14
+Making Right-L-Sg map to reduced label 14
+Making Right-LGN map to reduced label 14
+Making Right-MGN map to reduced label 14
+Making Right-MV(Re) map to reduced label 14
+Making Right-Pf map to reduced label 14
+Making Right-CM map to reduced label 14
+Making Right-LP map to reduced label 14
+Making Right-VLa map to reduced label 14
+Making Right-VPL map to reduced label 14
+Making Right-VLp map to reduced label 14
+Making Right-VM map to reduced label 14
+Making Right-CeM map to reduced label 14
+Making Right-Pc map to reduced label 14
+Making Right-CL map to reduced label 14
+Making Right-VA map to reduced label 14
+Making Right-AV map to reduced label 14
+Making Right-VAmc map to reduced label 14
+Making Right-Pt map to reduced label 14
+Making Right-LD map to reduced label 14
+--------------
+Making Left-PuA map to reduced label 15
+Making Left-PuI map to reduced label 15
+Making Left-PuL map to reduced label 15
+Making Left-PuM map to reduced label 15
+Making Left-MDl map to reduced label 15
+Making Left-MDm map to reduced label 15
+Making Right-PuA map to reduced label 15
+Making Right-PuI map to reduced label 15
+Making Right-PuL map to reduced label 15
+Making Right-PuM map to reduced label 15
+Making Right-MDl map to reduced label 15
+Making Right-MDm map to reduced label 15
+Smoothing mesh collection with kernel size 1.125000 ...Smoothing class: 0
+Smoothing class: 1
+Smoothing class: 2
+Smoothing class: 3
+Smoothing class: 4
+Smoothing class: 5
+Smoothing class: 6
+Smoothing class: 7
+Smoothing class: 8
+Smoothing class: 9
+Smoothing class: 10
+Smoothing class: 11
+Smoothing class: 12
+Smoothing class: 13
+Smoothing class: 14
+done
+Resolution level: 2 of 4
+Iteration 1 of 5
+EM converged!
+numberOfContrasts = 1
+Image: 0
+AtlasMeshToIntensityImage
+1
+0.398942
+SLIDING
+L-BFGS
+Verbose: 0
+MaximalDeformationStopCriterion: 1e-10
+LineSearchMaximalDeformationIntervalStopCriterion: 1e-10
+MaximumNumberOfIterations: 1000
+BFGS-MaximumMemoryLength: 12
+Resolution level 2 iteration 1 deformation iterations 1
+Resolution level 2 iteration 1 deformation iterations 11
+Resolution level 2 iteration 1 deformation iterations 21
+Iteration 2 of 5
+EM converged!
+numberOfContrasts = 1
+Image: 0
+AtlasMeshToIntensityImage
+1
+0.398942
+SLIDING
+L-BFGS
+Verbose: 0
+MaximalDeformationStopCriterion: 1e-10
+LineSearchMaximalDeformationIntervalStopCriterion: 1e-10
+MaximumNumberOfIterations: 1000
+BFGS-MaximumMemoryLength: 12
+Resolution level 2 iteration 2 deformation iterations 1
+Resolution level 2 iteration 2 deformation iterations 11
+Resolution level 2 iteration 2 deformation iterations 21
+Iteration 3 of 5
+EM converged!
+numberOfContrasts = 1
+Image: 0
+AtlasMeshToIntensityImage
+1
+0.398942
+SLIDING
+L-BFGS
+Verbose: 0
+MaximalDeformationStopCriterion: 1e-10
+LineSearchMaximalDeformationIntervalStopCriterion: 1e-10
+MaximumNumberOfIterations: 1000
+BFGS-MaximumMemoryLength: 12
+Resolution level 2 iteration 3 deformation iterations 1
+Resolution level 2 iteration 3 deformation iterations 11
+Resolution level 2 iteration 3 deformation iterations 21
+Iteration 4 of 5
+EM converged!
+numberOfContrasts = 1
+Image: 0
+AtlasMeshToIntensityImage
+1
+0.398942
+SLIDING
+L-BFGS
+Verbose: 0
+MaximalDeformationStopCriterion: 1e-10
+LineSearchMaximalDeformationIntervalStopCriterion: 1e-10
+MaximumNumberOfIterations: 1000
+BFGS-MaximumMemoryLength: 12
+Resolution level 2 iteration 4 deformation iterations 1
+Resolution level 2 iteration 4 deformation iterations 11
+Resolution level 2 iteration 4 deformation iterations 21
+Iteration 5 of 5
+EM converged!
+numberOfContrasts = 1
+Image: 0
+AtlasMeshToIntensityImage
+1
+0.398942
+SLIDING
+L-BFGS
+Verbose: 0
+MaximalDeformationStopCriterion: 1e-10
+LineSearchMaximalDeformationIntervalStopCriterion: 1e-10
+MaximumNumberOfIterations: 1000
+BFGS-MaximumMemoryLength: 12
+Resolution level 2 iteration 5 deformation iterations 1
+Resolution level 2 iteration 5 deformation iterations 11
+Resolution level 2 iteration 5 deformation iterations 21
+Smoothing mesh collection with kernel size 0.750000 ...Smoothing class: 0
+Smoothing class: 1
+Smoothing class: 2
+Smoothing class: 3
+Smoothing class: 4
+Smoothing class: 5
+Smoothing class: 6
+Smoothing class: 7
+Smoothing class: 8
+Smoothing class: 9
+Smoothing class: 10
+Smoothing class: 11
+Smoothing class: 12
+Smoothing class: 13
+Smoothing class: 14
+done
+Resolution level: 3 of 4
+Iteration 1 of 5
+EM converged!
+numberOfContrasts = 1
+Image: 0
+AtlasMeshToIntensityImage
+1
+0.398942
+SLIDING
+L-BFGS
+Verbose: 0
+MaximalDeformationStopCriterion: 1e-10
+LineSearchMaximalDeformationIntervalStopCriterion: 1e-10
+MaximumNumberOfIterations: 1000
+BFGS-MaximumMemoryLength: 12
+Resolution level 3 iteration 1 deformation iterations 1
+Resolution level 3 iteration 1 deformation iterations 11
+Resolution level 3 iteration 1 deformation iterations 21
+Iteration 2 of 5
+EM converged!
+numberOfContrasts = 1
+Image: 0
+AtlasMeshToIntensityImage
+1
+0.398942
+SLIDING
+L-BFGS
+Verbose: 0
+MaximalDeformationStopCriterion: 1e-10
+LineSearchMaximalDeformationIntervalStopCriterion: 1e-10
+MaximumNumberOfIterations: 1000
+BFGS-MaximumMemoryLength: 12
+Resolution level 3 iteration 2 deformation iterations 1
+Resolution level 3 iteration 2 deformation iterations 11
+Resolution level 3 iteration 2 deformation iterations 21
+Iteration 3 of 5
+EM converged!
+numberOfContrasts = 1
+Image: 0
+AtlasMeshToIntensityImage
+1
+0.398942
+SLIDING
+L-BFGS
+Verbose: 0
+MaximalDeformationStopCriterion: 1e-10
+LineSearchMaximalDeformationIntervalStopCriterion: 1e-10
+MaximumNumberOfIterations: 1000
+BFGS-MaximumMemoryLength: 12
+Resolution level 3 iteration 3 deformation iterations 1
+Resolution level 3 iteration 3 deformation iterations 11
+Resolution level 3 iteration 3 deformation iterations 21
+Iteration 4 of 5
+EM converged!
+numberOfContrasts = 1
+Image: 0
+AtlasMeshToIntensityImage
+1
+0.398942
+SLIDING
+L-BFGS
+Verbose: 0
+MaximalDeformationStopCriterion: 1e-10
+LineSearchMaximalDeformationIntervalStopCriterion: 1e-10
+MaximumNumberOfIterations: 1000
+BFGS-MaximumMemoryLength: 12
+Resolution level 3 iteration 4 deformation iterations 1
+Resolution level 3 iteration 4 deformation iterations 11
+Resolution level 3 iteration 4 deformation iterations 21
+Iteration 5 of 5
+EM converged!
+numberOfContrasts = 1
+Image: 0
+AtlasMeshToIntensityImage
+1
+0.398942
+SLIDING
+L-BFGS
+Verbose: 0
+MaximalDeformationStopCriterion: 1e-10
+LineSearchMaximalDeformationIntervalStopCriterion: 1e-10
+MaximumNumberOfIterations: 1000
+BFGS-MaximumMemoryLength: 12
+Resolution level 3 iteration 5 deformation iterations 1
+Resolution level 3 iteration 5 deformation iterations 11
+Resolution level 3 iteration 5 deformation iterations 21
+Smoothing mesh collection with kernel size 0.000000 ...done
+Resolution level: 4 of 4
+Iteration 1 of 3
+EM converged!
+numberOfContrasts = 1
+Image: 0
+AtlasMeshToIntensityImage
+1
+0.398942
+SLIDING
+L-BFGS
+Verbose: 0
+MaximalDeformationStopCriterion: 1e-10
+LineSearchMaximalDeformationIntervalStopCriterion: 1e-10
+MaximumNumberOfIterations: 1000
+BFGS-MaximumMemoryLength: 12
+Resolution level 4 iteration 1 deformation iterations 1
+Resolution level 4 iteration 1 deformation iterations 11
+Resolution level 4 iteration 1 deformation iterations 21
+Iteration 2 of 3
+EM converged!
+numberOfContrasts = 1
+Image: 0
+AtlasMeshToIntensityImage
+1
+0.398942
+SLIDING
+L-BFGS
+Verbose: 0
+MaximalDeformationStopCriterion: 1e-10
+LineSearchMaximalDeformationIntervalStopCriterion: 1e-10
+MaximumNumberOfIterations: 1000
+BFGS-MaximumMemoryLength: 12
+Resolution level 4 iteration 2 deformation iterations 1
+Resolution level 4 iteration 2 deformation iterations 11
+Resolution level 4 iteration 2 deformation iterations 21
+Iteration 3 of 3
+EM converged!
+numberOfContrasts = 1
+Image: 0
+AtlasMeshToIntensityImage
+1
+0.398942
+SLIDING
+L-BFGS
+Verbose: 0
+MaximalDeformationStopCriterion: 1e-10
+LineSearchMaximalDeformationIntervalStopCriterion: 1e-10
+MaximumNumberOfIterations: 1000
+BFGS-MaximumMemoryLength: 12
+Resolution level 4 iteration 3 deformation iterations 1
+Resolution level 4 iteration 3 deformation iterations 11
+Resolution level 4 iteration 3 deformation iterations 21
+Fitting mesh to image took 1079.8704 seconds
+Transforming points
+Transforming points
+Wrote image to file image.mgz
+Constructing image-to-world transform from header information (asmr1.mgz)
+Constructing image-to-world transform from header information (/Applications/freesurfer/8.0.0/subjects/sub125/tmp/THnuclei_v13_useTwoComponents_1_T1/imageDump.mgz)
+Wrote image to file asmr2.mgz
+This file does not contain MRI parameters
+This file does not contain MRI parameters
+Everything done!
+It took 1705.8615 seconds 

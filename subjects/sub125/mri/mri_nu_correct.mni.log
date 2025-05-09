@@ -1,0 +1,111 @@
+/Applications/freesurfer/8.0.0/subjects/sub125/mri
+/Applications/freesurfer/8.0.0/bin/mri_nu_correct.mni
+--i orig.mgz --o nu.mgz --uchar transforms/talairach.xfm --n 2 --ants-n4
+nIters 2
+FreeSurferEnv.csh dev
+Darwin H2WHK1CLQ6P0 24.3.0 Darwin Kernel Version 24.3.0: Thu Jan  2 20:24:06 PST 2025; root:xnu-11215.81.4~3/RELEASE_ARM64_T8103 arm64
+Fri Mar 28 15:43:55 CDT 2025
+tmpdir is ./tmp.mri_nu_correct.mni.7586
+cd /Applications/freesurfer/8.0.0/subjects/sub125/mri
+AntsN4BiasFieldCorrectionFs -i orig.mgz -o ./tmp.mri_nu_correct.mni.7586/nu0.mgz --dtype uchar
+AntsN4BiasFieldCorrectionFs done
+mri_binarize --i ./tmp.mri_nu_correct.mni.7586/nu0.mgz --min -1 --o ./tmp.mri_nu_correct.mni.7586/ones.mgz
+
+dev
+cwd /Applications/freesurfer/8.0.0/subjects/sub125/mri
+cmdline mri_binarize --i ./tmp.mri_nu_correct.mni.7586/nu0.mgz --min -1 --o ./tmp.mri_nu_correct.mni.7586/ones.mgz 
+sysname  Darwin
+hostname H2WHK1CLQ6P0
+machine  arm64
+user     root
+
+input      ./tmp.mri_nu_correct.mni.7586/nu0.mgz
+frame      0
+nErode3d   0
+nErode2d   0
+output     ./tmp.mri_nu_correct.mni.7586/ones.mgz
+Binarizing based on threshold
+min        -1
+max        +infinity
+binval        1
+binvalnot     0
+fstart = 0, fend = 0, nframes = 1
+Found 16777216 values in range
+Counting number of voxels in first frame
+Found 16777216 voxels in final mask
+Writing output to ./tmp.mri_nu_correct.mni.7586/ones.mgz
+Count: 16777216 16777216.000000 16777216 100.000000
+mri_binarize done
+mri_segstats --id 1 --seg ./tmp.mri_nu_correct.mni.7586/ones.mgz --i orig.mgz --sum ./tmp.mri_nu_correct.mni.7586/sum.junk --avgwf ./tmp.mri_nu_correct.mni.7586/input.mean.dat
+
+dev
+cwd 
+cmdline mri_segstats --id 1 --seg ./tmp.mri_nu_correct.mni.7586/ones.mgz --i orig.mgz --sum ./tmp.mri_nu_correct.mni.7586/sum.junk --avgwf ./tmp.mri_nu_correct.mni.7586/input.mean.dat 
+sysname  Darwin
+hostname H2WHK1CLQ6P0
+machine  arm64
+user     root
+whitesurfname  white
+UseRobust  0
+Loading ./tmp.mri_nu_correct.mni.7586/ones.mgz
+Loading orig.mgz
+Voxel Volume is 1 mm^3
+Generating list of segmentation ids
+Found   1 segmentations
+Computing statistics for each segmentation
+
+Reporting on   1 segmentations
+Using PrintSegStat
+Computing spatial average of each frame
+
+Writing to ./tmp.mri_nu_correct.mni.7586/input.mean.dat
+mri_segstats done
+mri_segstats --id 1 --seg ./tmp.mri_nu_correct.mni.7586/ones.mgz --i ./tmp.mri_nu_correct.mni.7586/nu0.mgz --sum ./tmp.mri_nu_correct.mni.7586/sum.junk --avgwf ./tmp.mri_nu_correct.mni.7586/output.mean.dat
+
+dev
+cwd 
+cmdline mri_segstats --id 1 --seg ./tmp.mri_nu_correct.mni.7586/ones.mgz --i ./tmp.mri_nu_correct.mni.7586/nu0.mgz --sum ./tmp.mri_nu_correct.mni.7586/sum.junk --avgwf ./tmp.mri_nu_correct.mni.7586/output.mean.dat 
+sysname  Darwin
+hostname H2WHK1CLQ6P0
+machine  arm64
+user     root
+whitesurfname  white
+UseRobust  0
+Loading ./tmp.mri_nu_correct.mni.7586/ones.mgz
+Loading ./tmp.mri_nu_correct.mni.7586/nu0.mgz
+Voxel Volume is 1 mm^3
+Generating list of segmentation ids
+Found   1 segmentations
+Computing statistics for each segmentation
+
+Reporting on   1 segmentations
+Using PrintSegStat
+Computing spatial average of each frame
+
+Writing to ./tmp.mri_nu_correct.mni.7586/output.mean.dat
+mri_segstats done
+mris_calc -o ./tmp.mri_nu_correct.mni.7586/nu0.mgz ./tmp.mri_nu_correct.mni.7586/nu0.mgz mul 1.13680098029658167225
+Packing
+Done packing
+Unpacking
+#VMPC# mris_calc VmPeak  0
+mri_convert ./tmp.mri_nu_correct.mni.7586/nu0.mgz nu.mgz --like orig.mgz
+mri_convert ./tmp.mri_nu_correct.mni.7586/nu0.mgz nu.mgz --like orig.mgz 
+reading from ./tmp.mri_nu_correct.mni.7586/nu0.mgz...
+TR=0.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, 0, 0)
+j_ras = (0, 0, -1)
+k_ras = (0, 1, 0)
+INFO: transform src into the like-volume: orig.mgz
+writing to nu.mgz...
+mri_make_uchar nu.mgz transforms/talairach.xfm nu.mgz
+type change took 0 minutes and 3 seconds.
+FIRST_PERCENTILE 0.010000
+WM_PERCENTILE    0.900000
+MAX_R 50.000000
+i1 = 1, i2 = 45
+#mri_make_uchar# mapping  2 110 to  3 110  :  b 0.107955 m 1.00316 : thresh -0.107614 maxsat 254.088 : nzero 0 nsat 29
+ 
+ 
+Fri Mar 28 15:45:05 CDT 2025
+mri_nu_correct.mni done

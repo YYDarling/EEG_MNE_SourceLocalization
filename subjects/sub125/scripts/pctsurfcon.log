@@ -1,0 +1,9 @@
+Logfile for pctsurfcon
+Fri Mar 28 17:08:44 CDT 2025
+setenv SUBJECTS_DIR /Applications/freesurfer/8.0.0/subjects
+cd /Applications/freesurfer/8.0.0/subjects/sub125/scripts
+/Applications/freesurfer/8.0.0/bin/pctsurfcon
+FreeSurferEnv.csh dev
+Darwin H2WHK1CLQ6P0 24.3.0 Darwin Kernel Version 24.3.0: Thu Jan  2 20:24:06 PST 2025; root:xnu-11215.81.4~3/RELEASE_ARM64_T8103 arm64
+FREESURFER_HOME /Applications/freesurfer/8.0.0
+Cleaning up

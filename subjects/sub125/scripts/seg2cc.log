@@ -1,0 +1,51 @@
+Log file for seg2cc
+Fri Mar 28 15:52:32 CDT 2025
+
+setenv SUBJECTS_DIR /Applications/freesurfer/8.0.0/subjects
+cd /Applications/freesurfer/8.0.0/subjects/sub125/mri
+/Applications/freesurfer/8.0.0/bin/seg2cc --s sub125
+
+freesurfer-macOS-darwin_arm64-8.0.0-20250205-0f2bd3a
+FreeSurferEnv.csh dev
+Darwin H2WHK1CLQ6P0 24.3.0 Darwin Kernel Version 24.3.0: Thu Jan  2 20:24:06 PST 2025; root:xnu-11215.81.4~3/RELEASE_ARM64_T8103 arm64
+IsConformed yes
+Fri Mar 28 15:52:33 CDT 2025
+mri_cc -aseg aseg.auto_noCCseg.mgz -o aseg.auto.mgz -lta transforms/cc_up.lta sub125
+will read input aseg from aseg.auto_noCCseg.mgz
+writing aseg with cc labels to aseg.auto.mgz
+will write lta as transforms/cc_up.lta
+reading aseg from /Applications/freesurfer/8.0.0/subjects/sub125/mri/aseg.auto_noCCseg.mgz
+reading norm from /Applications/freesurfer/8.0.0/subjects/sub125/mri/norm.mgz
+35832 voxels in left wm, 28607 in right wm, xrange [127, 135]
+searching rotation angles z=[-4 10], y=[-8  6]
+searching scale 1 Z rot -3.9  searching scale 1 Z rot -3.6  searching scale 1 Z rot -3.4  searching scale 1 Z rot -3.1  searching scale 1 Z rot -2.9  searching scale 1 Z rot -2.6  searching scale 1 Z rot -2.4  searching scale 1 Z rot -2.1  searching scale 1 Z rot -1.9  searching scale 1 Z rot -1.6  searching scale 1 Z rot -1.4  searching scale 1 Z rot -1.1  searching scale 1 Z rot -0.9  searching scale 1 Z rot -0.6  searching scale 1 Z rot -0.4  searching scale 1 Z rot -0.1  searching scale 1 Z rot 0.1  searching scale 1 Z rot 0.4  searching scale 1 Z rot 0.6  searching scale 1 Z rot 0.9  searching scale 1 Z rot 1.1  searching scale 1 Z rot 1.4  searching scale 1 Z rot 1.6  searching scale 1 Z rot 1.9  searching scale 1 Z rot 2.1  searching scale 1 Z rot 2.4  searching scale 1 Z rot 2.6  searching scale 1 Z rot 2.9  searching scale 1 Z rot 3.1  searching scale 1 Z rot 3.4  searching scale 1 Z rot 3.6  searching scale 1 Z rot 3.9  searching scale 1 Z rot 4.1  searching scale 1 Z rot 4.4  searching scale 1 Z rot 4.6  searching scale 1 Z rot 4.9  searching scale 1 Z rot 5.1  searching scale 1 Z rot 5.4  searching scale 1 Z rot 5.6  searching scale 1 Z rot 5.9  searching scale 1 Z rot 6.1  searching scale 1 Z rot 6.4  searching scale 1 Z rot 6.6  searching scale 1 Z rot 6.9  searching scale 1 Z rot 7.1  searching scale 1 Z rot 7.4  searching scale 1 Z rot 7.6  searching scale 1 Z rot 7.9  searching scale 1 Z rot 8.1  searching scale 1 Z rot 8.4  searching scale 1 Z rot 8.6  searching scale 1 Z rot 8.9  searching scale 1 Z rot 9.1  searching scale 1 Z rot 9.4  searching scale 1 Z rot 9.6  global minimum found at slice 130.0, rotations (-0.78, 2.89)
+final transformation (x=130.0, yr=-0.785, zr=2.889):
+ 0.99864  -0.05040  -0.01368   5.49152;
+ 0.05039   0.99873  -0.00069   6.67186;
+ 0.01370   0.00000   0.99991   15.22962;
+ 0.00000   0.00000   0.00000   1.00000;
+updating x range to be [125, 129] in xformed coordinates
+best xformed slice 127
+min_x_fornix = 130
+min_x_fornix = 131
+min_x_fornix = 131
+min_x_fornix = 128
+min_x_fornix = 127
+cc center is found at 127 115 111
+eigenvectors:
+-0.00038  -0.00125   1.00000;
+-0.01362  -0.99991  -0.00126;
+ 0.99991  -0.01362   0.00036;
+error in mid anterior detected - correcting...
+writing aseg with callosum to /Applications/freesurfer/8.0.0/subjects/sub125/mri/aseg.auto.mgz...
+corpus callosum segmentation took 0.3 minutes
+#VMPC# mri_cc VmPeak  0
+mri_cc done
+Fri Mar 28 15:52:48 CDT 2025
+ 
+Started at Fri Mar 28 15:52:32 CDT 2025 
+Ended   at Fri Mar 28 15:52:48 CDT 2025
+Seg2cc-Run-Time-Sec 16
+Seg2cc-Run-Time-Hours 0.00
+ 
+seg2cc Done
